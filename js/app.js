@@ -136,7 +136,7 @@ testMultiplyArray(testArray);
 
 // Don't forget to create a new branch for your work on the next question, if you attempt it.
 
-/////////////////////////////////////
+////////////////////////////////////
 /* STRETCH GOAL: Problem 6
 Write a function called multiplyAnyArray() that takes an array of numbers of any length as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
 
