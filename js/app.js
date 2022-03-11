@@ -88,13 +88,20 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 
-// function sumArray(sumArr) { //eslint-disable-line
-//   let sumArr = sum(testArray[0])
-// }
+function sumArray() {
+  let sumArrayOne = sum(sum(testArray[0], testArray[1]) [0], testArray[2])[0];
+  let hotMess = `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${sumArrayOne} is their sum.`;
+  return [sumArrayOne, hotMess];
+
+}
+let messy = sumArray(testArray);
+console.log(messy);
+
+//console.log(typeof sumArray);
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -110,11 +117,18 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  let multiArrayOne = multiply(multiply(testArray[0], testArray[1]) [0], testArray[2])[0];
+  let flamingHotMess = `The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${multiArrayOne}.`;
+
+  return [multiArrayOne, flamingHotMess];
 
 }
+let flames = multiplyArray(testArray);
+console.log(flames);
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
